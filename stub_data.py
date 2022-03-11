@@ -4,10 +4,11 @@ import random as rand
 rand.seed(42)
 
 
-def generate_interval_sin(interval, intervals_in_day, q=1_000, around=5_000):
-    x = interval / intervals_in_day * 3.1415 * 8 - 3.1415 / 4
-    return (math.sin(x) + 0.5) * around + (rand.random() - 0.5) * 2 * q
+def generate_interval_sin(interval, intervals_in_day, q=3_000, around=5_000):
+    x = interval / intervals_in_day * 2 * 3.1415
+    return (math.sin(x) + 1.0) * around + (rand.random()) * q
 
 
-def generate_stub_data(counts=168 * 15, intervals_in_day=24 * 60 / 15):
-    return list(map(lambda i: generate_interval_sin(i, intervals_in_day), range(0, counts)))
+def generate_stub_data(points: int, intervals_in_day: int):
+    print(f'Generate {points} points with {intervals_in_day} intervals per day')
+    return list(map(lambda i: generate_interval_sin(i, intervals_in_day), range(1, points + 1)))
