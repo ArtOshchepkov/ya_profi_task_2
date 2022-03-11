@@ -1,4 +1,13 @@
 # Задача 2. Анализ трафика
+
+# См. решение в репозитории - так удобнее!
+
+[Здесь](https://github.com/ArtOshchepkov/ya_profi_task_2).
+
+
+[И здесь!](https://github.com/ArtOshchepkov/ya_profi_task_2/issues/1)
+
+
 ## Введение
 
 ### Идея решения
